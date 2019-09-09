@@ -108,6 +108,7 @@ h1.h1-style-mobile {
   padding-top: 30px;
   padding-bottom: 25px;
   text-align: center;
+  margin-bottom: 100px;
 }
 @media (max-width: 1199px) {
   .row-techsupport {
@@ -116,8 +117,9 @@ h1.h1-style-mobile {
   }
 }
 .row-techsupport div {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
+  font-weight: 300;
 }
 .row-techsupport div a {
   color: #642891;
@@ -185,6 +187,8 @@ h2.h2-style {
   height: 56px;
   border-radius: none;
   font-size: 20px;
+  color: #757575;
+  font-weight: 300;
 }
 .form--search .form__input:focus {
   color: #757575;
@@ -317,6 +321,7 @@ img.img-icon {
 .cont-action p {
   text-align: center;
   font-size: 20px;
+  font-weight: 300;
   line-height: 32px;
   padding-top: 15px;
   padding-bottom: 30px;
