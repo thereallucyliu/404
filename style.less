@@ -1,0 +1,312 @@
+    // define variables import less files
+    @import "variables.less"; //mixins
+    // custom page less
+    .wrap .content {
+        background-color: #F5F5F5;
+    }
+
+    h1.h1-style {
+        font-size: 45px;
+        line-height: 54px;
+        font-weight: 100;
+        padding-bottom: 50px;
+        @media (max-width: 1199px) {
+            font-size: 34px;
+            line-height: 40px;
+        }
+        @media (max-width: 479px) {
+            padding-bottom: 20px;
+            display: none;
+        }
+    }
+
+    h1.h1-style-mobile {
+        font-size: 34px;
+        font-weight: 100;
+        @media (min-width: 480px) {
+            display: none;
+        }
+    }
+
+    .jumbotron {
+        background-color: #F5F5F5;
+        padding-top: 50px;
+        padding-bottom: 15px;
+        @media (max-width: 767px) {
+            padding-top: 40px;
+        }
+        @media (max-width: 479px) {
+            padding-top: 25px;
+        }
+        img {
+            display: inline;
+        }
+    }
+
+    .img-responsive {
+        height: 600px;
+        @media (max-width: 767px) {
+            height: 400px;
+        }
+        @media (max-width: 479px) {
+            height: 350px;
+        }
+        @media (max-width: 320px) {
+            height: 300px;
+        }
+    }
+
+    .pos-rel {
+        position: relative;
+    }
+
+    #content-jump {
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: -128px;
+        @media (max-width: 950px) and (min-width: 768px) {
+            top: -108px;
+        }
+         @media (max-width: 767px) {
+            top: -64px;
+        }
+    }
+
+    .mdi-magnify {
+        color: @brand-color;
+        &::before {
+            font-size: 32px;
+        }
+    }
+
+    .row-search {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        @media (max-width: 991px) {
+            padding-bottom: 15px;
+        }
+    }
+
+    .row-techsupport {
+        padding-top: 30px;
+        padding-bottom: 25px;
+        text-align: center;
+        @media (max-width: 1199px) {
+            padding-top: 15px;
+            padding-bottom: 0px;
+        }
+
+        div {
+            font-size: 24px;
+            line-height: 32px;
+            a {
+                color: @brand-color;
+            }
+            @media (max-width: 1199px) {
+                font-size: 20px;
+            }
+            @media (max-width: 479px) {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    h2.h2-style {
+        font-size: 34px;
+        font-weight: 100;
+        color: @charcoal;
+        text-align: center;
+        @media (max-width: 1199px) {
+            font-size: 24px;
+        }
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+    }
+
+    .site-map {
+        color: @charcoal;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        a {
+            color: @brand-color;
+            &:hover {
+                font-weight: 400;
+                color: @brand-color;
+            }
+        }
+        @media (max-width: 1199px) {
+            font-size: 20px;
+        }
+        @media (max-width: 479px) {
+            font-size: 18px;
+        }
+    }
+
+    .form--search {
+        width: 100%;
+        position: relative;
+        .form__input {
+            float: left;
+            border: 1px solid @lighter-gray;
+            border-right: none;
+            padding-left: 15px;
+            width: 85%;
+            height: 56px;
+            border-radius: none;
+            font-size: 20px;
+            &:focus {
+                color: #757575;
+            }
+            @media (max-width: 1199px) {
+                font-size: 18px;
+            }
+            @media (max-width: 600px) {
+                font-size: 16px;
+            }
+            @media (max-width: 360px) {
+                font-size: 14px;
+                padding-left: 15px;
+            }
+            @media (max-width: 320px) {
+                padding-left: 5px;
+                width: 80%;
+            }
+        }
+        .form__submit {
+            display: inline-block;
+            width: 15%;
+            height: 56px;
+            border: 1px solid @lighter-gray;
+            background-color: @white;
+            text-align: center;
+            border-radius: none;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid @brand-color;
+            }
+            @media (max-width: 320px) {
+                width: 20%;
+            }
+        }
+    }
+
+    .col-search {
+        @media (max-width: 767px) {
+            padding: 0 8px;
+        }
+    }
+
+     ::placeholder {
+        color: #757575;
+    }
+
+    .row {
+        margin-left: -5px;
+        margin-right: -5px;
+        @media (max-width: 767px) {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+        @media (min-width: 768px) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        @media (min-width: 992px) {
+            width: 992px;
+        }
+        @media (min-width: 1200px) {
+            width: 1200px;
+        }
+        @media (min-width: 1440px) {
+            width: 1440px;
+        }
+    }
+
+    .btn-ghost {
+        display: block;
+        border: 1px solid @brand-color;
+        color: @brand-color;
+        border-radius: 0px;
+        height: 56px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 16px 24px;
+        &:hover {
+            background-color: @brand-color;
+            color: @white;
+        }
+        @media (max-width: 1199px) {
+            height: 40px;
+            padding: 7px 20px;
+            font-size: 14px;
+        }
+    }
+
+    img.img-icon {
+        margin-left: auto;
+        margin-right: auto;
+        height: 75px;
+        display: block;
+        padding-top: 20px;
+    }
+
+    .cont-action {
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-bottom: 12px;
+
+        @media (max-width: 767px) {
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-bottom: 8px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            line-height: 32px;
+            padding-top: 15px;
+            padding-bottom: 30px;
+
+            @media (max-width: 1199px) {
+                font-size: 16px;
+                line-height: 24px;
+            }
+            @media (max-width:991px) {
+                padding: 30px;
+            }
+            @media (max-width:479px) {
+                padding: 20px;
+            }
+        }
+    }
+
+    .card-white {
+        padding: 35px 20px;
+        background-color: @white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .15);
+        @media (max-width:479px) {
+            padding: 30px 20px;
+        }
+        @media (max-width:320px) {
+            padding: 20px 20px;
+        }
+    }
+
+    .col-cards {
+        @media (max-width: 767px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
